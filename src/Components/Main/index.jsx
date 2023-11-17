@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import Header from "../Header";
 import img from '../../assets/images/logo.png';
 import compyuter from '../../assets/images/compyuter.jpg';
@@ -12,12 +12,32 @@ import img4 from '../../assets/images/img4.jpg';
 import img5 from '../../assets/images/img5.jpg';
 import img6 from '../../assets/images/img6.jpg';
 
+
 import { Container,Nav,Title,Img,PartOne,PartOneItem,PartOneItemTitle,
   PartOneItemText,Button,PartTwoItem,Img1,Img2,Img3,Section,Box,BoxContainer,BoxWrapper} from "./style";
-import { Card } from "@mui/material";
 
 
-const  Main=()=> {
+
+const  Main=({images})=> {
+
+  const [activeImage, setActiveImage] = React.useState(0)
+
+  const handlePreviousImageClick = () => {
+    setActiveImage((prevIndex) => {
+      const nextIndex = prevIndex - 1
+      return nextIndex
+    })
+  }
+
+  const handleNextImageClick = () => {
+    setActiveImage((prevIndex) => {
+      const nextIndex = prevIndex + 1
+      return nextIndex
+    })
+  }
+
+
+
   return (
     <div>
       <Header />
@@ -110,7 +130,15 @@ const  Main=()=> {
 
 
       
+
+      
     </Container>
+
+
+    
+
+
+
     </div>
   );
 }

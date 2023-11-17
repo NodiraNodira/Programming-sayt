@@ -14,7 +14,7 @@ margin-left:60%;
 text-align:center;
 display:flex;
 gap:40px;
-margin-top:10px;
+margin-top:-4%;
 color:#9598A9;
 
 `;
@@ -73,6 +73,20 @@ color:#FFFFFF;
 align-items:center;
 font-size:17px;
 cursor:pointer;
+`;
+
+export const Icon =styled.img`
+width:60px;
+margin-left:10%;
+margin-top:5px;
+
+`;
+
+export const Icon1 =styled.img`
+width:20px;
+margin-left:10px;
+border:2px solid white;
+border-radius:50%;
 `;
 
 

@@ -1,9 +1,11 @@
-import Main from "./Components/Main";
+import FirstPage from "./Components";
+import SecondPage from "./Components2";
 
 function App() {
   return (
     <div >
-      <Main/>
+      <FirstPage/>
+      {/* <SecondPage/> */}
     </div>
   );
 }

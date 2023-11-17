@@ -106,6 +106,7 @@ width:80%;
 height:60%;
 gap:30px;
 margin-left:10%;
+display:flex;
 `;
 
 export const Box =styled.div`

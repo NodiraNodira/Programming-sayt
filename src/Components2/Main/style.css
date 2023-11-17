@@ -1,0 +1,22 @@
+div{
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+color: #212529;
+font-size: 12px;
+letter-spacing: 0.5px;
+line-height: 1.37;
+font-family: "Muli", sans-serif !important;
+box-sizing: border-box;
+position: relative;
+width: 100%;
+padding-right: 20px;
+padding-left: 20px;
+flex: 0 0 50%;
+max-width: 50%;
+text-align: center;
+}
+
+
+/* document.querySelector("#__next > div >
+ section.hero-section > div.container > div > div.col-6.text-center") */
